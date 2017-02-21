@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Hello"
+date:   2017-02-20
+categories: introduction
+---
+This is my first blog. I may be a few decades out of date, but here goes.

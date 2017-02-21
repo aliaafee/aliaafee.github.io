@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-02-21T19:34:33+05:00</updated><id>http://localhost:4000/</id><title type="html">Aafee’s Projects</title><subtitle>This is where I talk about my interests and projects.
+</subtitle><entry><title type="html">Droplet Photography</title><link href="http://localhost:4000/arduino/photography/electronics/2017/02/21/droplet-photo.html" rel="alternate" type="text/html" title="Droplet Photography" /><published>2017-02-21T14:00:00+05:00</published><updated>2017-02-21T14:00:00+05:00</updated><id>http://localhost:4000/arduino/photography/electronics/2017/02/21/droplet-photo</id><content type="html" xml:base="http://localhost:4000/arduino/photography/electronics/2017/02/21/droplet-photo.html">&lt;h2 id=&quot;step-one-getting-ardunio-to-talk-to-the-camera-and-flash&quot;&gt;Step One: Getting ardunio to talk to the camera and flash.&lt;/h2&gt;
+
+&lt;p&gt;My camera is Canon Powershot G10 which has a external trigger port. The port is a standard 2.5mm stereo plug. I got the pinout from &lt;a href=&quot;http://pinoutguide.com/DigitalCameras/canon_350d_shutter_pinout.shtml&quot;&gt;pinoutguide.com&lt;/a&gt;. Pin 1 is the shutter, pin 2 is focus and pin 3 is ground.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/dropletphoto/triggerpinout.gif&quot; alt=&quot;Camera trigger pinout&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Shorting pin 1 to pin 3(ground), makes the camera take a picture. I used a 2.5mm to 3.5mm converter cable to connect to the circuit.&lt;/p&gt;
+
+&lt;p&gt;The flash I had was a Canon Speedlite 220EX. It did not have PC Sync Cable port, so I had to get a flash hot shoe with PC Sync port. I used a PC Sync to 3.5mm converter cable to connect to the circuit. To get the flash to trigger I simply had to short the two pins of the PC Sync Cable.&lt;/p&gt;
+
+&lt;p&gt;I used Sharp PC817 optoisolators to short the pins. This will keep the arduino safe from high voltages from the flash.&lt;/p&gt;
+
+&lt;p&gt;Circuit schematic:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/dropletphoto/camera_flash_connector_schematic.png&quot; alt=&quot;Camera Flash Connector Schematic&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Final setup:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/dropletphoto/camera_flash_setup.jpg&quot; alt=&quot;Final Setup of Camera and Flash&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Brown is ground. To trigger flash red should be set to high. To take a photo blue shoudl be set to high.&lt;/p&gt;
+
+&lt;h2 id=&quot;step-two-dropping-coins&quot;&gt;Step Two: Dropping Coins.&lt;/h2&gt;
+
+&lt;p&gt;I did not have an electronic water valve to control water drops, so to test out the trigger I made a setup to take pictures of coins dropping in water.&lt;/p&gt;
+
+&lt;p&gt;Circuit schematic:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/dropletphoto/coin_dropper_schem.png&quot; alt=&quot;Coin dropper schematic&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/aliaafee/droplet-photography/blob/master/arduino/CoinDropper/CoinDropper.ino&quot;&gt;Arduino code&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Servo controlled coin gate:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/dropletphoto/coin_gate.jpg&quot; alt=&quot;Coin gate&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the result:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/dropletphoto/coin_drop.jpg&quot; alt=&quot;Coin drop example&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Step One: Getting ardunio to talk to the camera and flash.</summary></entry><entry><title type="html">Migrated to Git.</title><link href="http://localhost:4000/git/github/2017/02/21/migrate-to-github.html" rel="alternate" type="text/html" title="Migrated to Git." /><published>2017-02-21T00:00:00+05:00</published><updated>2017-02-21T00:00:00+05:00</updated><id>http://localhost:4000/git/github/2017/02/21/migrate-to-github</id><content type="html" xml:base="http://localhost:4000/git/github/2017/02/21/migrate-to-github.html">&lt;p&gt;Moved all my svn repositories to git. My private repositories are stored in a folder in google drive. All the public ones are stored in GitHub. The &lt;a href=&quot;http://john.albin.net/git/git-svn-migrate&quot;&gt;“Complete Idiot’s Guide to git-svn-migration”&lt;/a&gt; by John Albin was very helpful. Uploading the .git to GitHub was more of a hassel than expected. I ended up using GitHub Desktop to do it.&lt;/p&gt;</content><author><name></name></author><summary type="html">Moved all my svn repositories to git. My private repositories are stored in a folder in google drive. All the public ones are stored in GitHub. The “Complete Idiot’s Guide to git-svn-migration” by John Albin was very helpful. Uploading the .git to GitHub was more of a hassel than expected. I ended up using GitHub Desktop to do it.</summary></entry><entry><title type="html">Hello</title><link href="http://localhost:4000/introduction/2017/02/20/hello.html" rel="alternate" type="text/html" title="Hello" /><published>2017-02-20T00:00:00+05:00</published><updated>2017-02-20T00:00:00+05:00</updated><id>http://localhost:4000/introduction/2017/02/20/hello</id><content type="html" xml:base="http://localhost:4000/introduction/2017/02/20/hello.html">&lt;p&gt;This is my first blog. I may be a few decades out of date, but here goes.&lt;/p&gt;</content><author><name></name></author><summary type="html">This is my first blog. I may be a few decades out of date, but here goes.</summary></entry></feed>
